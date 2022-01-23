@@ -1,17 +1,16 @@
 import { reactive } from "vue";
 
-export const listState = reactive<MovieInterface[]>([])
+export const listState = reactive<MovieInterface[]>([]);
 
 export interface MovieInterface {
-    title: string,
-    year: number,
-    imdbID: string
+  title: string;
+  year: number;
+  imdbID: string;
 }
 
 export const listActions = {
-    handleAddToList(movie: MovieInterface): Array<MovieInterface>{
-        listState.push(movie)
-        console.log(listState)
-        return listState
-    }
-}
+  handleAddToList(movie: MovieInterface): Array<MovieInterface> {
+    listState.push(movie);
+    return listState;
+  },
+};

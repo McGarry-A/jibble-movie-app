@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/list">My List</router-link>
+    <router-link class="router-link" to="/">Home</router-link> |
+    <router-link class="router-link" to="/list">My List</router-link>
   </div>
   <router-view/>
 </template>
@@ -40,14 +40,18 @@ export default defineComponent({
 
 #nav {
   padding: 30px;
+  font-size: 2em;
 }
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #0f1e2d;
+  text-decoration: none;
+  margin: 0 50px;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #2c4298;
+  text-decoration: underline;
 }
 </style>
