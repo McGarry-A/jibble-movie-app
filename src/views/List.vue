@@ -4,7 +4,7 @@
   </div>
   <div class="list-container">
     <div class="list-items" v-for="(movie, index) in listArray" :key="index">
-      <search-results :movie="movie" key="index" />
+      <search-results :movie="movie" key="index" color="yellow" />
     </div>
   </div>
 </template>

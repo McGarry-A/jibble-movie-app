@@ -13,7 +13,7 @@
         v-for="(movie, index) in state.movieData"
         :key="index"
       >
-        <search-results :movie="movie" :index="index" />
+        <search-results :movie="movie" :index="index" color="gray" />
       </div>
     </div>
   </div>
